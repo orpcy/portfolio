@@ -1,43 +1,66 @@
-*, html, body{
+*,
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*{
+@font-face {
+  font-family: Minion;
+  src: url("./minion_pro/MinionPro-Medium.woff");
+}
+
+@font-face {
+  font-family: Milliard;
+  src: url("./fonts/milliard_medium_normal.woff");
+}
+
+* {
   color: white;
 }
 
-body{
+body {
   background-color: #161b22;
   color: white;
 }
 
-.coming-soon{
+.coming-soon {
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.coming-soon h1{
+.coming-soon h1 {
   font-size: 40px;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  font-family: Minion;
 }
 
-header a{
+header a {
   text-decoration: none;
   margin: 0 16px;
   font-weight: 500;
 }
 
-.header-title{
+.header-title {
   font-weight: bold;
   font-size: 20px;
 }
 
+.intro {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: rgba(255, 193, 128, 0.65);
+  font-size: 35px;
+  font-family: Milliard;
+}
