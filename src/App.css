@@ -1,0 +1,43 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*{
+  color: white;
+}
+
+body{
+  background-color: #161b22;
+  color: white;
+}
+
+.coming-soon{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon h1{
+  font-size: 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header a{
+  text-decoration: none;
+  margin: 0 16px;
+  font-weight: 500;
+}
+
+.header-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+
