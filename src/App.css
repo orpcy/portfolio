@@ -278,7 +278,7 @@ header svg {
   .mobile-menu {
     display: block;
     background-color: #161b22;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
