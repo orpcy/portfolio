@@ -225,6 +225,9 @@ header a {
 }
 
 @media screen and (max-width: 768px) {
+  .main {
+    width: 80%;
+  }
   .intro h2 {
     font-size: 45px;
   }
