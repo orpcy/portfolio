@@ -119,6 +119,7 @@ header a {
   margin-right: 14px;
   min-width: 200px;
   max-width: 200px;
+  width: 100%;
   font-weight: bolder;
   display: flex;
   align-items: center;
