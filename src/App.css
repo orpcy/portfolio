@@ -56,14 +56,14 @@ header a {
   font-size: 20px;
 }
 
-.logo{
+.logo {
   width: 50px;
   filter: invert(1);
 }
 
 .main {
   max-width: 1400px;
-  width: 90%;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -188,6 +188,10 @@ header a {
   justify-content: space-between;
 }
 
+.skills-percent span {
+  color: #5eead4;
+}
+
 .skills-wrapper {
   display: flex;
   align-items: center;
@@ -216,4 +220,38 @@ header a {
 .skills-img img {
   max-width: 380px;
   width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .intro h2 {
+    font-size: 45px;
+  }
+
+  .view-start {
+    flex-direction: column;
+  }
+
+  .view-start button {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .skills-inner {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .skills-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 40px;
+  }
 }
