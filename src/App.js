@@ -17,7 +17,7 @@ function App() {
             <BsDashLg size={26} />
             <p>
               In a digital realm where imagination takes shape, I am a Software
-              Developer and UI/UX Designer, weaving innovation into every line
+              Engineer and UI/UX Designer, weaving innovation into every line
               of code and pixel of design. With a passion for seamless user
               experiences and sleek interfaces, I bring ideas to life with
               creativity and technical finesse. Let's create something

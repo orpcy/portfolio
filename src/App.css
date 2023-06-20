@@ -38,6 +38,11 @@ body {
   font-size: 40px;
 }
 
+.header_mobile,
+.mobile-menu {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -111,6 +116,10 @@ header a {
 .view-start {
   display: flex;
   margin-top: 26px;
+}
+
+header svg {
+  cursor: pointer;
 }
 
 .view-start button {
@@ -253,10 +262,62 @@ header a {
   .skills-img {
     width: 100%;
   }
-}
 
-@media screen and (max-width: 480px) {
+  .header_desktop {
+    display: none;
+  }
+
+  .header_mobile {
+    display: flex;
+  }
+
   .logo {
     width: 40px;
   }
+
+  .mobile-menu {
+    display: block;
+    background-color: #161b22;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 16px;
+    transform: translate(800px);
+    transition: 1s ease-in;
+  }
+
+  .mobile-menu.opened {
+    transform: translate(0);
+    transition: 1s ease-out;
+  }
+
+  .mobile-menu nav {
+    margin-top: 16px;
+  }
+
+  .mobile-menu nav a {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .mobile-menu .close {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close svg {
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .close svg:hover {
+    background-color: #506176;
+  }
+}
+
+@media screen and (max-width: 480px) {
 }

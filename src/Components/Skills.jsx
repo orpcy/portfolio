@@ -5,46 +5,52 @@ const Skills = () => {
     {
       id: "ReactJS_skill",
       content: "ReactJS",
-      porcentage: "97%",
+      percentage: "97%",
       value: "97",
     },
     {
       id: "Node_skill",
       content: "Node.js",
-      porcentage: "95%",
+      percentage: "95%",
       value: "95",
     },
-    { id: "HTML5_skill", content: "HTML5", porcentage: "99%", value: "99" },
-    { id: "CSS3_skill", content: "CSS3", porcentage: "98%", value: "98" },
+    { id: "HTML5_skill", content: "HTML5", percentage: "99%", value: "99" },
+    { id: "CSS3_skill", content: "CSS3", percentage: "98%", value: "98" },
     {
       id: "JavaScript_skill",
       content: "JavaScript",
-      porcentage: "94%",
+      percentage: "94%",
       value: "94",
     },
     {
+      id: "Redux_skill",
+      content: "Redux",
+      percentage: "92%",
+      value: "92",
+    },
+    {
+      id: "NextJS_skill",
+      content: "NextJS",
+      percentage: "90%",
+      value: "90",
+    },
+    {
       id: "Database_skill",
-      content: "Database",
-      porcentage: "90%",
+      content: "Databases",
+      percentage: "90%",
       value: "90",
     },
     {
       id: "Git_skill",
       content: "Git",
-      porcentage: "98%",
+      percentage: "98%",
       value: "98",
     },
     {
-      id: "Wordpress_skill",
-      content: "Wordpress",
-      porcentage: "80%",
-      value: "80",
-    },
-    {
-      id: "Shopify_skill",
-      content: "Shopify",
-      porcentage: "80%",
-      value: "80",
+      id: "Figma_skill",
+      content: "Figma",
+      percentage: "94%",
+      value: "94",
     },
   ]);
 
@@ -54,7 +60,7 @@ const Skills = () => {
       <div className="skills-wrapper">
         <div className="skills-inner">
           {skills.map((skill) => {
-            const { id, content, porcentage, value } = skill;
+            const { id, content, percentage, value } = skill;
             return (
               <div className="progress-wrap" key={id}>
                 <div className="skills-percent">
@@ -65,7 +71,7 @@ const Skills = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: porcentage }}
+                    style={{ width: percentage }}
                     aria-valuenow={value}
                     aria-valuemin="0"
                     aria-valuemax="100"
