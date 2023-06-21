@@ -3,6 +3,8 @@ import "./App.css";
 import Socials from "./Components/Socials";
 import { BsDashLg } from "react-icons/bs";
 import Skills from "./Components/Skills";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
             <BsDashLg size={26} />
             <p>
               In a digital realm where imagination takes shape, I am a Software
-              Engineer and UI/UX Designer, weaving innovation into every line
-              of code and pixel of design. With a passion for seamless user
+              Engineer and UI/UX Designer, weaving innovation into every line of
+              code and pixel of design. With a passion for seamless user
               experiences and sleek interfaces, I bring ideas to life with
               creativity and technical finesse. Let's create something
               extraordinary together.
@@ -30,10 +32,10 @@ function App() {
           </div>
         </div>
 
-        <div>
-          <Skills />
-        </div>
+        <Skills />
+        <Contact />
       </div>
+      <Footer />
 
       <Socials />
     </div>

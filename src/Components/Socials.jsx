@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
 
 const Socials = () => {
@@ -21,6 +21,13 @@ const Socials = () => {
         href="https://stackoverflow.com/users/10930895/orpcy"
       >
         <FaStackOverflow size={18} />
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="mailto:sofiyullahj@gmail.com"
+      >
+        <AiOutlineMail size={18} />
       </a>
       <hr />
     </div>

@@ -4,7 +4,6 @@ import { AiOutlineMenuUnfold, AiOutlineCloseSquare } from "react-icons/ai";
 
 const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
-
   const handleMenuOpen = () => setMenuToggle(true);
   const handleMenuClose = () => setMenuToggle(false);
 
@@ -42,7 +41,7 @@ const Header = () => {
           </Link>
         </nav>
         <nav>
-          <Link>CONTACT</Link>
+          <a href="#contact">CONTACT</a>
           <Link onClick={downloadResume}>RESUME</Link>
         </nav>
       </header>
@@ -69,8 +68,8 @@ const Header = () => {
         <nav>
           <Link>WEB</Link>
           <Link>DESIGN</Link>
-          <Link>CONTACT</Link>
-          <Link>RESUME</Link>
+          <a href="#contact">CONTACT</a>
+          <Link onClick={downloadResume}>RESUME</Link>
         </nav>
       </div>
     </React.Fragment>
