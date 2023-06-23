@@ -19,6 +19,7 @@ const Header = () => {
           alink.href = fileURL;
           alink.download = "SofiyullahJ Resume.pdf";
           alink.click();
+          handleMenuClose();
         });
       });
     }
@@ -66,9 +67,15 @@ const Header = () => {
           <AiOutlineCloseSquare size={28} onClick={handleMenuClose} />
         </div>
         <nav className="line">
-          <a href="#web_projects">WEB</a>
-          <a href="#design_projects">DESIGN</a>
-          <a href="#contact">CONTACT</a>
+          <a onClick={handleMenuClose} href="#web_projects">
+            WEB
+          </a>
+          <a onClick={handleMenuClose} href="#design_projects">
+            DESIGN
+          </a>
+          <a onClick={handleMenuClose} href="#contact">
+            CONTACT
+          </a>
           <Link onClick={downloadResume}>RESUME</Link>
         </nav>
       </div>
