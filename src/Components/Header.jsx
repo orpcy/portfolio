@@ -28,11 +28,11 @@ const Header = () => {
     <React.Fragment>
       <header className="header_desktop">
         <nav>
-          <Link>WEB</Link>
-          <Link>DESIGN</Link>
+          <a href="#web_projects">WEB</a>
+          <a href="#design_projects">DESIGN</a>
         </nav>
         <nav>
-          <Link className="header-title">
+          <Link to="/" className="header-title">
             <img
               src="/img/logo3.png"
               alt="Sofiyullahi Jamiu"
@@ -66,8 +66,8 @@ const Header = () => {
           <AiOutlineCloseSquare size={28} onClick={handleMenuClose} />
         </div>
         <nav>
-          <Link>WEB</Link>
-          <Link>DESIGN</Link>
+          <a href="#web_projects">WEB</a>
+          <a href="#design_projects">DESIGN</a>
           <a href="#contact">CONTACT</a>
           <Link onClick={downloadResume}>RESUME</Link>
         </nav>

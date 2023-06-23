@@ -5,6 +5,7 @@ import { BsDashLg } from "react-icons/bs";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         </div>
 
         <Skills />
+        <Projects />
         <Contact />
       </div>
       <Footer />
