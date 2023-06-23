@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="header_desktop">
-        <nav>
+        <nav className="line">
           <a href="#web_projects">WEB</a>
           <a href="#design_projects">DESIGN</a>
         </nav>
@@ -40,7 +40,7 @@ const Header = () => {
             />
           </Link>
         </nav>
-        <nav>
+        <nav className="line">
           <a href="#contact">CONTACT</a>
           <Link onClick={downloadResume}>RESUME</Link>
         </nav>
@@ -65,7 +65,7 @@ const Header = () => {
         <div className="close">
           <AiOutlineCloseSquare size={28} onClick={handleMenuClose} />
         </div>
-        <nav>
+        <nav className="line">
           <a href="#web_projects">WEB</a>
           <a href="#design_projects">DESIGN</a>
           <a href="#contact">CONTACT</a>
