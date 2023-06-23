@@ -144,7 +144,7 @@ header svg {
   cursor: pointer;
 }
 
-.view-start button {
+.view-start a {
   padding: 12px 25px;
   outline: none;
   margin-right: 14px;
@@ -156,9 +156,10 @@ header svg {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.view-start button:first-child {
+.view-start a:first-child {
   border: 1px solid rgba(255, 193, 128, 0.65);
   color: rgba(255, 193, 128, 0.65);
   background-color: transparent;
@@ -166,12 +167,12 @@ header svg {
   transition: 0.5s ease-in-out;
 }
 
-.view-start button:first-child:hover {
+.view-start a:first-child:hover {
   transform: scale(1.06);
   background-color: #232b35;
 }
 
-.view-start button:last-child {
+.view-start a:last-child {
   border: 1px solid rgba(255, 193, 128, 0.65);
   color: #c5c8cc;
   background-color: rgba(255, 194, 128, 0.468);
@@ -180,7 +181,7 @@ header svg {
   transition: 0.5s ease-in-out;
 }
 
-.view-start button:last-child:hover {
+.view-start a:last-child:hover {
   transform: scale(1.06);
   background-color: rgba(217, 142, 63, 0.65);
 }
@@ -446,7 +447,7 @@ footer img {
     flex-direction: column;
   }
 
-  .view-start button {
+  .view-start a {
     margin-right: 0;
     margin-bottom: 16px;
   }

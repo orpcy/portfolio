@@ -28,8 +28,8 @@ function App() {
             </p>
           </div>
           <div className="view-start">
-            <button>VIEW MY PROJECTS</button>
-            <button>START A PROJECT</button>
+            <a href="#web_projects">VIEW MY PROJECTS</a>
+            <a href="#contact">START A PROJECT</a>
           </div>
         </div>
 
