@@ -32,6 +32,7 @@ const Socials = () => {
         <a
           href="https://www.codementor.io/@sofiyullahj?refer=badge"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             src="https://www.codementor.io/m-badges/sofiyullahj/find-me-on-cm-b.svg"
