@@ -15,11 +15,11 @@ function App() {
         <div className="intro">
           <h6>Hello there, I am</h6>
           <h2>SOFIYULLAHI JAMIU</h2>
-          <h4>Software Engineer and UI/UX Designer</h4>
+          <h4>Fullstack Software Engineer and UI/UX Designer</h4>
           <div className="more-intro">
             <BsDashLg size={26} />
             <p>
-              In a digital realm where imagination takes shape, I am a Software
+              In a digital realm where imagination takes shape, I am a Full Stack Software
               Engineer and UI/UX Designer, weaving innovation into every line of
               code and pixel of design. With a passion for seamless user
               experiences and sleek interfaces, I bring ideas to life with
