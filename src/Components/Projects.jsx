@@ -5,32 +5,32 @@ const Projects = () => {
     {
       url: "/img/web_projects/unplugdd_home.png",
       title: "UNPLUGDD",
-      tags: ["reactJS", "css", "nextJS", "bootstrap"],
+      tags: ["reactJS", "nextJS", "bootstrap", "mongoDB", "nodeJS"],
     },
     {
       url: "/img/web_projects/smartBits.png",
       title: "THE SMARTBITS",
-      tags: ["scss", "html5", "javascript", 'api'],
+      tags: ["scss", "html5", "javascript", 'api', "nodeJS", "express"],
     },
     {
       url: "/img/web_projects/Enterprise.png",
       title: "ENTERPRISE",
-      tags: ["html", "css", "jquery", 'core-ui', 'javascript'],
+      tags: ["vanillaJS", "css", "jquery", 'core-ui', 'html', "reactJS"],
     },
     {
       url: "/img/web_projects/AGS.png",
       title: "ACCELERATED GROWTH SOLUTIONS",
-      tags: ["html5", "css3", "javascript", "jquery"],
+      tags: ["html5", "css", "javascript", "jquery"],
     },
     {
       url: "/img/web_projects/Alamo.png",
       title: "ALAMO",
-      tags: ["html", "css", "javascript"],
+      tags: ["jquery", "css", "vanillaJS", "html"],
     },
     {
       url: "/img/web_projects/Fiixy.png",
       title: "FIIXY",
-      tags: ["reactJS", "nodeJS", "mongoDB", "css"],
+      tags: ["reactJS", "nodeJS", "mongoDB", "css3"],
     },
   ]);
 
