@@ -1,20 +1,26 @@
-import React from "react";
+import { ChangeEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleChange } from "../store/inputs/inputs-slice";
+import { RootState } from "../store/store";
 
 const Contact = () => {
   const dispatch = useDispatch();
 
   const { name, email, title, description } = useSelector(
-    (state) => state.inputs
+    (state: RootState) => state.inputs
   );
 
-  const handleChangeDispatch = (e) => {
+  const handleChangeDispatch = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     dispatch(handleChange({ name, value }));
   };
 
-//   const handleSubmit = () => dispatch(resetInputs());
+  const handleTextAreaChangeDispatch = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    dispatch(handleChange({ name, value }));
+  };
+
+  // const handleSubmit = () => dispatch(resetInputs());
 
   return (
     <div className="contact" id="contact">
@@ -68,15 +74,12 @@ const Contact = () => {
             rows={8}
             required
             name="description"
-            onChange={(evt) => handleChangeDispatch(evt)}
+            onChange={(evt) => handleTextAreaChangeDispatch(evt)}
             value={description}
           />
         </div>
         <div className="contact-btn">
-          <button
-            type="submit"
-            //   onClick={handleSubmit}
-          >
+          <button type="submit">
             SUBMIT
           </button>
         </div>

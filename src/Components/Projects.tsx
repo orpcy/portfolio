@@ -1,7 +1,18 @@
 import React, { useState } from "react";
 
+interface WebProjectTypes {
+  url: string;
+  title: string;
+  tags: string[];
+}
+
+interface DesignProjectTypes {
+  url: string;
+  title: string;
+}
+
 const Projects = () => {
-  const [webProjects] = useState([
+  const [webProjects] = useState<Array<WebProjectTypes>>([
     {
       url: "/img/web_projects/unplugdd_home.png",
       title: "UNPLUGDD",
@@ -10,12 +21,12 @@ const Projects = () => {
     {
       url: "/img/web_projects/smartBits.png",
       title: "THE SMARTBITS",
-      tags: ["scss", "html5", "javascript", 'api', "nodeJS", "express"],
+      tags: ["scss", "html5", "javascript", "api", "nodeJS", "express"],
     },
     {
       url: "/img/web_projects/Enterprise.png",
       title: "ENTERPRISE",
-      tags: ["vanillaJS", "css", "jquery", 'core-ui', 'html', "reactJS"],
+      tags: ["vanillaJS", "css", "jquery", "core-ui", "html", "reactJS"],
     },
     {
       url: "/img/web_projects/AGS.png",
@@ -34,7 +45,7 @@ const Projects = () => {
     },
   ]);
 
-  const [designProjects] = useState([
+  const [designProjects] = useState<Array<DesignProjectTypes>>([
     { url: "/img/design_projects/knowklub.png", title: "KNOWKLUB" },
     { url: "/img/design_projects/carlix.png", title: "CARLIX" },
     { url: "/img/design_projects/theramed.png", title: "THERAMED" },

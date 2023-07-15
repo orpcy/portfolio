@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
+interface SkillTypes {
+  id: string;
+  content: string;
+  percentage: string;
+  value: string;
+};
+
 const Skills = () => {
-  const [skills] = useState([
+  const [skills] = useState<Array<SkillTypes>>([
     {
       id: "ReactJS_skill",
       content: "ReactJS",
@@ -72,7 +79,7 @@ const Skills = () => {
       <div className="skills-wrapper">
         <div className="skills-inner">
           {skills.map((skill) => {
-            const { id, content, percentage, value } = skill;
+            const { id, content, percentage } = skill;
             return (
               <div className="progress-wrap" key={id}>
                 <div className="skills-percent">
@@ -84,9 +91,6 @@ const Skills = () => {
                     className="progress-bar"
                     role="progressbar"
                     style={{ width: percentage }}
-                    aria-valuenow={value}
-                    aria-valuemin="0"
-                    aria-valuemax="100"
                   ></div>
                 </div>
               </div>

@@ -1,6 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+export interface inputInitialState {
+  name: string;
+  email: string;
+  title: string;
+  description: string;
+}
+
+const initialState: inputInitialState = {
   name: "",
   email: "",
   title: "",
@@ -11,7 +18,7 @@ const inputsSlice = createSlice({
   name: "inputs",
   initialState,
   reducers: {
-    handleChange: (state, action) => {
+    handleChange: (state: any, action) => {
       const { name, value } = action.payload;
       state[name] = value;
     },

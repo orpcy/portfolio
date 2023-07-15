@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenuUnfold, AiOutlineCloseSquare } from "react-icons/ai";
 
 const Header = () => {
-  const [menuToggle, setMenuToggle] = useState(false);
-  const handleMenuOpen = () => setMenuToggle(true);
-  const handleMenuClose = () => setMenuToggle(false);
+  const [menuToggle, setMenuToggle] = useState<boolean>(false);
+  const handleMenuOpen = (): void => setMenuToggle(true);
+  const handleMenuClose = (): void => setMenuToggle(false);
 
-  const downloadResume = () => {
+  const downloadResume = (): void => {
     if (window.confirm("Download SofiyullahJ Resume?")) {
       // using Java Script method to get PDF file
       fetch("/img/Resume.pdf").then((response) => {
@@ -43,13 +43,13 @@ const Header = () => {
         </nav>
         <nav className="line">
           <a href="#contact">CONTACT</a>
-          <Link onClick={downloadResume}>RESUME</Link>
+          <Link to="/" onClick={downloadResume}>RESUME</Link>
         </nav>
       </header>
 
       <header className="header_mobile">
         <nav>
-          <Link className="header-title">
+          <Link to="/" className="header-title">
             <img
               src="/img/logo3.png"
               alt="Sofiyullahi Jamiu"
@@ -76,7 +76,7 @@ const Header = () => {
           <a onClick={handleMenuClose} href="#contact">
             CONTACT
           </a>
-          <Link onClick={downloadResume}>RESUME</Link>
+          <Link to="/" onClick={downloadResume}>RESUME</Link>
         </nav>
       </div>
     </React.Fragment>
